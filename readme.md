@@ -1,0 +1,1 @@
+i recommend downloading Airi_3_trained_art yourself, she causes me a lot of problems

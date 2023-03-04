@@ -27,7 +27,8 @@ def filterLocal(unfiltered):
     os.chdir('/home/ze2/.local/share/backgrounds')
     existing = os.listdir()
     for existingCard in existing:
-        unfiltered.remove(existingCard)
+        if existingCard in unfiltered:
+            unfiltered.remove(existingCard)
         if existingCard.replace("_trained_art", "") in unfiltered:
             unfiltered.remove(existingCard.replace("_trained_art", ""))
         if existingCard.replace("_art", "") in unfiltered:
